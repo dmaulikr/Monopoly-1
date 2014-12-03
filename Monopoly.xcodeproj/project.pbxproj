@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C51AD3DD1A2FA23600BE66F9 /* properties.json in Resources */ = {isa = PBXBuildFile; fileRef = C51AD3DC1A2FA23600BE66F9 /* properties.json */; };
 		C57DA5AF1A2F527300A41953 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57DA5AE1A2F527300A41953 /* AppDelegate.swift */; };
 		C57DA5B11A2F527300A41953 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57DA5B01A2F527300A41953 /* ViewController.swift */; };
 		C57DA5B41A2F527300A41953 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C57DA5B21A2F527300A41953 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C51AD3DC1A2FA23600BE66F9 /* properties.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = properties.json; sourceTree = "<group>"; };
 		C57DA5A91A2F527300A41953 /* Monopoly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monopoly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57DA5AD1A2F527300A41953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C57DA5AE1A2F527300A41953 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				C57DA5B51A2F527300A41953 /* Images.xcassets */,
 				C57DA5B71A2F527300A41953 /* LaunchScreen.xib */,
 				C57DA5AC1A2F527300A41953 /* Supporting Files */,
+				C51AD3DC1A2FA23600BE66F9 /* properties.json */,
 			);
 			path = Monopoly;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C51AD3DD1A2FA23600BE66F9 /* properties.json in Resources */,
 				C57DA5B41A2F527300A41953 /* Main.storyboard in Resources */,
 				C57DA5B91A2F527300A41953 /* LaunchScreen.xib in Resources */,
 				C57DA5B61A2F527300A41953 /* Images.xcassets in Resources */,
@@ -419,6 +423,7 @@
 				C57DA5CA1A2F527300A41953 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C57DA5CB1A2F527300A41953 /* Build configuration list for PBXNativeTarget "MonopolyTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +432,7 @@
 				C57DA5CD1A2F527300A41953 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

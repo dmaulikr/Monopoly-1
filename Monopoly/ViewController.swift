@@ -13,6 +13,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = UIColor(red: 205, green: 232, blue: 208, alpha: 1)
+
         let skView = SKView(frame: view.frame)
         skView.showsFPS = true
         view.addSubview(skView)
