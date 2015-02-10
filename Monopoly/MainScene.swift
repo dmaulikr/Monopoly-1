@@ -47,7 +47,13 @@ class MainScene: SKScene {
                     }
 
                     let property = Property(name: name, category: category, price: price, tile: tile, rent: rent)
+                    game.tiles.append(property)
                 }
             }
+        
+        game.players.append(Player(name: "Tillson"))
+        game.players.append(Player(name: "Cameron"))
+        game.players.append(Player(name: "Brian"))
+        game.startGame()
     }
 }

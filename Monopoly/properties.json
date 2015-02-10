@@ -1,10 +1,24 @@
  [
   {
+  "Name":"GO",
+  "Position":1,
+  "Price":0,
+  "Rent":0,
+  "Group":"GO"
+  },
+  {
   "Name":"Mediterranean Ave.",
   "Position":2,
   "Price":60,
   "Rent":2,
   "Group":"Brown"
+  },
+  {
+  "Name":"Community Chest",
+  "Position":3,
+  "Price":0,
+  "Rent":0,
+  "Group":"Chest"
   },
   {
   "Name":"Baltic Ave.",
@@ -14,9 +28,23 @@
   "Group":"Brown"
   },
   {
+  "Name":"Income Tax",
+  "Position":4,
+  "Price":-200,
+  "Rent":0,
+  "Group":"Tax"
+  },
+  {
   "Name":"Oriental Ave.",
   "Position":7,
   "Price":100,
+  "Rent":6,
+  "Group":"LightBlue"
+  },
+  {
+  "Name":"Chance",
+  "Position":8,
+  "Price":0,
   "Rent":6,
   "Group":"LightBlue"
   },
@@ -33,6 +61,13 @@
   "Price":120,
   "Rent":8,
   "Group":"LightBlue"
+  },
+  {
+  "Name":"Jail",
+  "Position":11,
+  "Price":0,
+  "Rent":0,
+  "Group":"Jail"
   },
   {
   "Name":"St. Charles Place",
@@ -63,6 +98,13 @@
   "Group":"Orange"
   },
   {
+  "Name":"CommunityChest",
+  "Position":18,
+  "Price":0,
+  "Rent":0,
+  "Group":"Chest"
+  },
+  {
   "Name":"TennesseeAve.",
   "Position":19,
   "Price":180,
@@ -77,12 +119,27 @@
   "Group":"Orange"
   },
   {
+  "Name":"FreeParking",
+  "Position":21,
+  "Price":0,
+  "Rent":0,
+  "Group":"FreeParking"
+  },
+  {
   "Name":"KentuckyAve.",
   "Position":22,
   "Price":220,
   "Rent":18,
   "Group":"Red"
   },
+  {
+  "Name":"Chance",
+  "Position":23,
+  "Price":0,
+  "Rent":0,
+  "Group":"Chance"
+  },
+
   {
   "Name":"IndianaAve.",
   "Position":24,

@@ -6,12 +6,43 @@
 //  Copyright (c) 2014 Tillson Galloway. All rights reserved.
 //
 
+import UIKit
+
 class MonopolyGame {
     var players: [Player] = []
     var tiles: [Property] = []
     
-    func rollDice() {
+    func startGame() {
+        println("Lets go!")
+        rollDice(players[0])
+    }
+    
+    func rollDice(player: Player) {
+        let number = arc4random_uniform(6) + 2
+        println("\(player.name): Rolled a \(number)")
+        for i in 0...number {
+            player.tile += 1
+            if player.tile > tiles.count - 1 {
+                player.tile = 1
+                println("\(player.name): Passed go!")
+                player.money += 200
+            }
+        }
+        println("\(player.name): Now on tile #\(player.tile)")
         
+        if let property = getPropertyForTile(player.tile) {
+            println("\(player.name): Landed on \(property.name).")
+        } else {
+            println("ERROR: Tile \(player.tile) not found.")
+        }
+        
+        checkForLosers()
+        let index = (players as NSArray).indexOfObject(player)
+        if (index == players.count - 1) {
+            rollDice(players[0])
+        } else {
+            rollDice(players[index + 1])
+        }
     }
     
     func checkForLosers() {
@@ -23,12 +54,17 @@ class MonopolyGame {
     }
     
     func getPropertyForTile(tile: Int) -> Property? {
-        return tiles.filter{ $0.tile == tile }[0]
+        let matches = tiles.filter{ $0.tile == tile }
+        if matches.count > 0 {
+            return matches[0]
+        }
+        return nil
     }
 }
 
 class Player {
     let name: String
+    var tile = 0
     
     var money = 1500
     
@@ -51,6 +87,8 @@ class Property {
     let price: Int
     let tile: Int
     let rent: Int
+    let houses = [House]()
+    var owner: Player?
     
     init(name: String, category: Category, price: Int, tile: Int, rent: Int) {
         self.name = name
