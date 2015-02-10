@@ -12,9 +12,12 @@ import SpriteKit
 class MainScene: SKScene {
    
     let monopolyBoardNode = BoardNode()
-    let game = MonopolyGame()
+    var game: MonopolyGame! = nil
     
     override func didMoveToView(view: SKView) {
+        
+        game = MonopolyGame(delegate: self)
+        
         backgroundColor = SKColor(red: 205, green: 232, blue: 208, alpha: 1)
         addChild(monopolyBoardNode)
         monopolyBoardNode.position = CGPoint(x: 0, y: 0)
@@ -55,5 +58,11 @@ class MainScene: SKScene {
         game.players.append(Player(name: "Cameron"))
         game.players.append(Player(name: "Brian"))
         game.startGame()
+    }
+}
+
+extension MainScene: MonopolyDelegate {
+    func playerLandedOnProperty(player: Player, property: Property) {
+//        println("\(player.name): landed on \(property.name).")
     }
 }

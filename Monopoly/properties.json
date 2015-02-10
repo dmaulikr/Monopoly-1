@@ -29,7 +29,7 @@
   },
   {
   "Name":"Income Tax",
-  "Position":4,
+  "Position":5,
   "Price":-200,
   "Rent":0,
   "Group":"Tax"
@@ -112,21 +112,21 @@
   "Group":"Orange"
   },
   {
-  "Name":"NewYorkAve.",
+  "Name":"New York Ave.",
   "Position":20,
   "Price":200,
   "Rent":16,
   "Group":"Orange"
   },
   {
-  "Name":"FreeParking",
+  "Name":"Free Parking",
   "Position":21,
   "Price":0,
   "Rent":0,
   "Group":"FreeParking"
   },
   {
-  "Name":"KentuckyAve.",
+  "Name":"Kentucky Ave.",
   "Position":22,
   "Price":220,
   "Rent":18,
@@ -141,60 +141,81 @@
   },
 
   {
-  "Name":"IndianaAve.",
+  "Name":"Indiana Ave.",
   "Position":24,
   "Price":220,
   "Rent":18,
   "Group":"Red"
   },
   {
-  "Name":"IllinoisAve.",
+  "Name":"Illinois Ave.",
   "Position":25,
   "Price":240,
   "Rent":20,
   "Group":"Red"
   },
   {
-  "Name":"AtlanticAve.",
+  "Name":"Atlantic Ave.",
   "Position":27,
   "Price":260,
   "Rent":22,
   "Group":"Yellow"
   },
   {
-  "Name":"VentnorAve.",
+  "Name":"Ventnor Ave.",
   "Position":28,
   "Price":260,
   "Rent":22,
   "Group":"Yellow"
   },
   {
-  "Name":"MarvinGardens",
+  "Name":"Marvin Gardens",
   "Position":30,
   "Price":280,
   "Rent":22,
   "Group":"Yellow"
   },
   {
-  "Name":"PacificAve.",
+  "Name":"Go To Jail",
+  "Position":31,
+  "Price":0,
+  "Rent":0,
+  "Group":"GoToJail"
+  },
+  {
+  "Name":"Pacific Ave.",
   "Position":32,
   "Price":300,
   "Rent":26,
   "Group":"Green"
   },
   {
-  "Name":"NorthCarolinaAve.",
+  "Name":"North Carolina Ave.",
   "Position":33,
   "Price":300,
   "Rent":26,
   "Group":"Green"
   },
   {
-  "Name":"PennsylvaniaAve.",
+  "Name":"Community Chest",
+  "Position":34,
+  "Price":0,
+  "Rent":0,
+  "Group":"Chest"
+  },
+  {
+  "Name":"Pennsylvania Ave.",
   "Position":35,
   "Price":320,
   "Rent":28,
   "Group":"Green"
+  },
+  {
+  "Name":"Chance",
+  "Position":37,
+  "Price":0,
+  "Rent":0,
+  "Group":"Chance"
   },
   {
   "Name":"Park Place",

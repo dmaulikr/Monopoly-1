@@ -17,6 +17,7 @@
 		C57DA5CF1A2F529C00A41953 /* BoardNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57DA5CE1A2F529C00A41953 /* BoardNode.swift */; };
 		C57DA5D11A2F52F300A41953 /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57DA5D01A2F52F300A41953 /* MainScene.swift */; };
 		C57DA5D31A2F53B000A41953 /* MonopolyGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57DA5D21A2F53B000A41953 /* MonopolyGame.swift */; };
+		C5B9B2F61A899A81006AE3CF /* MonopolyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B9B2F51A899A81006AE3CF /* MonopolyDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		C57DA5CE1A2F529C00A41953 /* BoardNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardNode.swift; sourceTree = "<group>"; };
 		C57DA5D01A2F52F300A41953 /* MainScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScene.swift; sourceTree = "<group>"; };
 		C57DA5D21A2F53B000A41953 /* MonopolyGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonopolyGame.swift; sourceTree = "<group>"; };
+		C5B9B2F51A899A81006AE3CF /* MonopolyDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonopolyDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				C57DA5B01A2F527300A41953 /* ViewController.swift */,
 				C57DA5D01A2F52F300A41953 /* MainScene.swift */,
 				C57DA5D21A2F53B000A41953 /* MonopolyGame.swift */,
+				C5B9B2F51A899A81006AE3CF /* MonopolyDelegate.swift */,
 				C57DA5B21A2F527300A41953 /* Main.storyboard */,
 				C57DA5B51A2F527300A41953 /* Images.xcassets */,
 				C57DA5B71A2F527300A41953 /* LaunchScreen.xib */,
@@ -228,6 +231,7 @@
 				C57DA5B11A2F527300A41953 /* ViewController.swift in Sources */,
 				C57DA5D31A2F53B000A41953 /* MonopolyGame.swift in Sources */,
 				C57DA5D11A2F52F300A41953 /* MainScene.swift in Sources */,
+				C5B9B2F61A899A81006AE3CF /* MonopolyDelegate.swift in Sources */,
 				C57DA5AF1A2F527300A41953 /* AppDelegate.swift in Sources */,
 				C57DA5CF1A2F529C00A41953 /* BoardNode.swift in Sources */,
 			);

@@ -9,8 +9,13 @@
 import UIKit
 
 class MonopolyGame {
-    var players: [Player] = []
-    var tiles: [Property] = []
+    var players = [Player]()
+    var tiles = [Property]()
+    let delegate: MonopolyDelegate
+    
+    init(delegate: MonopolyDelegate) {
+        self.delegate = delegate
+    }
     
     func startGame() {
         println("Lets go!")
@@ -19,19 +24,16 @@ class MonopolyGame {
     
     func rollDice(player: Player) {
         let number = arc4random_uniform(6) + 2
-        println("\(player.name): Rolled a \(number)")
         for i in 0...number {
             player.tile += 1
             if player.tile > tiles.count - 1 {
                 player.tile = 1
-                println("\(player.name): Passed go!")
                 player.money += 200
             }
         }
-        println("\(player.name): Now on tile #\(player.tile)")
         
         if let property = getPropertyForTile(player.tile) {
-            println("\(player.name): Landed on \(property.name).")
+            delegate.playerLandedOnProperty(player, property: property)
         } else {
             println("ERROR: Tile \(player.tile) not found.")
         }
